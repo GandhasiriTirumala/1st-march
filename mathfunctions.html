@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*console.log(Math.ceil(16.5))
+		console.log(Math.floor(16.5))
+		console.log(Math.round(16.5))
+		console.log(Math.round(16.4))
+		console.log(Math.random())
+		console.log(Math.abs(-16.5))
+		console.log(Math.sqrt(16))
+		console.log(Math.pow(3,6))*/
+		var passwordlist="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$&",randompassword=[]
+		for(i=1;i<=8;i++){
+			var randomNumber=Math.floor(Math.random()*passwordlist.length)
+			//console.log(passwordlist.charAt(randomNumber))
+			randompassword.push(passwordlist.charAt(randomNumber))
+		}
+		var finalresult=randompassword.join('')
+		console.log(finalresult)
+    </script>
+</body>
+</html>
